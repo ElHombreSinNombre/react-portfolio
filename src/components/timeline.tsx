@@ -1,6 +1,10 @@
+import { motion } from "framer-motion";
+
+
 function Timeline() {
     return (
-    <div className="shadow-lg hover:shadow-2xl duration-200 delay-75 bg-white rounded-sm py-6 pr-6 pl-9">
+        <motion.div initial={{ scale: 0.5, opacity: 0, borderRadius: 25 }} animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5 }} exit={{ opacity: 0, scale: 0.5 }} className="shadow-lg hover:shadow-2xl duration-200 delay-75 bg-white rounded-sm py-6 pr-6 pl-9">
         <ol className="relative border-l border-gray-200 dark:border-gray-700">
             <li className="mb-10 ml-6">
                 <span className="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
@@ -28,7 +32,7 @@ function Timeline() {
                 <p className="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
             </li>
         </ol>
-    </div>
+        </motion.div>
     );
 }
 
