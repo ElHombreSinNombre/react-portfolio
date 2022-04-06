@@ -2,6 +2,7 @@
 
 ## Packages
 
+- [FontAwesome](https://fontawesome.com/)
 - [Tailwind](https://tailwindcss.com/)
 
 ### NPM Packages
