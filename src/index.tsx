@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from './components/about';
 import Timeline from './components/timeline';
 import Header from './components/header';
-import Projects from './components/projects/projects';
+import Projects from './components/projects';
 
 //Particles
 import Particles from "react-tsparticles";

@@ -20,14 +20,14 @@ export default function TimeLine() {
 
 function Item(element: any) {
     let latest: any;
-    if (element.element.latest == true) {
+    if (element.element.latest === true) {
         latest = <Latest />
     } else {
         latest = null;
     }
 
     return (
-        <li className="mb-10 ml-6">
+        <li className="custom-card rounded-lg bg-gray-300 mb-10 ml-6 rounded-bl-lg p-5">
             <span title={element.element.date} className="cursor-help flex absolute -left-3 justify-center items-center w-6 h-6  rounded-full ring-8  dark:ring-black dark:bg-black" >
                 <FontAwesomeIcon icon={faCalendar} className="text-white" />
             </span >
