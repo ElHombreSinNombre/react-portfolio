@@ -29,7 +29,7 @@ function Item(element: any) {
 
     return (
         <motion.li initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-            transition={{ duration: element.element.id }} className="custom-card rounded-lg bg-gray-300 mb-10 ml-6 rounded-bl-lg p-5">
+            transition={{ duration: element.element.id }} className="custom-card  mb-10 ml-6  p-5">
             <span title={element.element.date} className="cursor-help flex absolute -left-3 justify-center items-center w-6 h-6  rounded-full ring-8  dark:ring-black dark:bg-black" >
                 <FontAwesomeIcon icon={faCalendar} className="text-white" />
             </span >
@@ -48,6 +48,6 @@ function Item(element: any) {
 
 function Latest() {
     return (
-        <span className="bg-blue-400 text-white font-medium mr-2 px-2.5 py-0.5 rounded" > Latest</span >
+        <span className="bg-black text-white mr-2 px-2.5 py-0.5 rounded" > Latest</span >
     )
 }
