@@ -8,7 +8,7 @@ const items = [{ text: "Work 1", description: "Test 1", date: "2022", latest: tr
 export default function TimeLine() {
     return (
         <motion.div initial={{ scale: 0.5, opacity: 0, borderRadius: 25 }} animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.5 }} className="shadow-lg hover:shadow-2xl duration-200 delay-75 bg-white rounded-sm py-6 pr-6 pl-9">
+            transition={{ duration: 0.5 }} className="bg-white rounded-sm py-6 pr-6 pl-9">
             <ol className="relative border-l border-gray-200 dark:border-gray-700">
                 {items.map((item, index) => (
                     <Item key={index} element={item} />

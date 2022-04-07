@@ -18,7 +18,7 @@ root.render(
     <BrowserRouter>
         <Particles options={particlesOptions as ISourceOptions} />
         <Header></Header>
-        <div className="grid place-items-center h-screen">
+        <div className="grid place-items-center vh-85">
             <Routes>
                 <Route path="/" element={<About />}></Route>
                 <Route path="/timeline" element={<Timeline />}></Route>
