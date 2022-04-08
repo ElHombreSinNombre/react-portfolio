@@ -2,6 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAddressCard } from "@fortawesome/free-regular-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from 'react-router-dom';
+
 
 function Header() {
 
@@ -14,9 +16,9 @@ function Header() {
     return (
         <div className="bg-transparent hidden sm:block m-3" >
             {navigation.map((item) => (
-                <a key={item.id} href={item.href} className='text-white p-4'>
+                <NavLink key={item.id} to={item.href} className={(navData) => navData.isActive ? "bg-gray-900 text-white p-4" : "text-white p-4 hover:bg-gray-700"}>
                     {item.icon}
-                </a>
+                </NavLink>
             ))}
         </div>
     )

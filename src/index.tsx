@@ -7,6 +7,8 @@ import About from './components/about';
 import Timeline from './components/timeline';
 import Header from './components/header';
 import Projects from './components/projects';
+import Project from './components/react/project';
+
 
 //Particles
 import Particles from "react-tsparticles";
@@ -23,6 +25,7 @@ root.render(
                 <Route path="/" element={<About />}></Route>
                 <Route path="/timeline" element={<Timeline />}></Route>
                 <Route path="/projects" element={<Projects />}></Route>
+                <Route path="/project" element={<Project />}></Route>
             </Routes>
         </div>
     </BrowserRouter>

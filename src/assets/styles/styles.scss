@@ -19,3 +19,10 @@
 .vh-85 {
   height: 85vh;
 }
+a {
+  @apply text-gray-500;
+
+  &:hover {
+    @apply text-black
+  }
+}

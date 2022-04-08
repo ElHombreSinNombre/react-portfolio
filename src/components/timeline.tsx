@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-regular-svg-icons";
 
-const items = [{ id: "1", icon: "versia", description: "Test 1", date: "2022", latest: true }, { id: "2", icon: "iot", description: "Test 2", date: "2021", latest: false }, { id: "3", icon: "solvent", description: "Test 3", date: "2020", latest: false }];
+const items = [{ id: "1", icon: "versia", description: "Test 1", date: "2021 - " + new Date().getFullYear(), latest: true }, { id: "2", icon: "iot", description: "Test 2", date: "2018 - 2021", latest: false }, { id: "3", icon: "solvent", description: "Test 3", date: "2016 - 2018", latest: false }];
 
 
 export default function TimeLine() {
