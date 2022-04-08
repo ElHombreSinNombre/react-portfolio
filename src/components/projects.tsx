@@ -3,16 +3,22 @@ import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 
 const items = [
     {
-        id: "1", name: "Angular CRUD", icon: "angular", description: "CRUD with Angular and GraphQL", repo: "https://github.com/ElHombreSinNombre/angular-material-graphql", links: [{ "lumen": "", "docker": "", flutter: "" }]
+        id: "1", name: "Angular CRUD", icon: "angular", description: "CRUD with Angular and GraphQL", repo: "https://github.com/ElHombreSinNombre/angular-material-graphql", links: [{ lumen: "", docker: "", flutter: "" }]
     },
     {
-        id: "2", name: "Flutter App", icon: "flutter", description: "CRUD with Flutter and dockerized Lumen API", repo: "https://github.com/ElHombreSinNombre/flutter-lumen", links: [{ "lumen": "", "docker": "", flutter: "" }]
+        id: "2", name: "Flutter App", icon: "flutter", description: "CRUD with Flutter and dockerized Lumen API", repo: "https://github.com/ElHombreSinNombre/flutter-lumen", links: [{ lumen: "", docker: "", flutter: "" }]
     },
     {
-        id: "3", name: "Laravel CRUD", icon: "laravel", description: "CRUD with dockerized Laravel and Vue", repo: "https://github.com/ElHombreSinNombre/laravel-vue", links: [{ "lumen": "", "docker": "", flutter: "" }]
+        id: "3", name: "Laravel CRUD", icon: "laravel", description: "CRUD with dockerized Laravel and Vue", repo: "https://github.com/ElHombreSinNombre/laravel-vue", links: [{ lumen: "", docker: "", flutter: "" }]
     },
     {
-        id: "4", name: "React portfolio", icon: "react", description: "Portfolio to learn how react works", repo: "https://github.com/ElHombreSinNombre/react-portfolio", links: [{ "lumen": "", "docker": "", flutter: "" }]
+        id: "4", name: "React portfolio", icon: "react", description: "Portfolio to learn how react works", repo: "https://github.com/ElHombreSinNombre/react-portfolio", links: [{ lumen: "", docker: "", flutter: "" }]
+    },
+    {
+        id: "5", name: "Vue with API", icon: "vue", description: "Consume API with Vue, Axios and Pinia", repo: "https://github.com/ElHombreSinNombre/vue-apirest", links: [{ lumen: "", docker: "", flutter: "" }]
+    },
+    {
+        id: "6", name: "Vue with filter", icon: "vue", description: "Filter local JSON array", repo: "https://github.com/ElHombreSinNombre/vue-filter", links: [{ lumen: "", docker: "", flutter: "" }]
     }
 
 ];
@@ -36,7 +42,7 @@ function Item(items: any) {
     const toggleOpen = () => setIsOpen(!isOpen);
 
     return (
-        <motion.li className="custom-card list-none cursor-pointer p-5 mb-5" layout onClick={toggleOpen} initial={{ borderRadius: 10 }}>
+        <motion.li className="custom-card bg-gray-300 list-none cursor-pointer p-5 mb-5" layout onClick={toggleOpen} initial={{ borderRadius: 10 }}>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
                 transition={{ duration: items.items.id }} className="flex items-center">
                 <motion.img src={require('./../assets/img/' + items.items.icon + '.ico')} layout />
